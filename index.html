@@ -789,6 +789,22 @@
   gtag('js', new Date());
 
   gtag('config', 'AW-18084143870');
+
+<script>
+function gtag_report_conversion(url) {
+  var callback = function () {
+    if (typeof(url) != 'undefined') {
+      window.location = url;
+    }
+  };
+  gtag('event', 'conversion', {
+      'send_to': 'AW-18084143870/IEXnCPXmkqAcEP7FmK9D',
+      'event_callback': callback
+  });
+  return false;
+}
+</script>
+
 </script>
 </head>
 <body>
@@ -833,7 +849,7 @@
         </div>
 
         <div class="hero-actions">
-          <a class="btn btn-primary" href="tel:0909163189">Zavolať: 0909 163 189</a>
+          <a class="btn btn-primary" href="tel:0909163189" onclick="return gtag_report_conversion('tel:0909163189');">Zavolať: 0909 163 189</a>
           <a class="btn btn-ghost" href="#kontakt">Získať cenovú ponuku</a>
         </div>
 
@@ -861,7 +877,7 @@
           </div>
         </div>
         <div class="contact-strip">
-          <a class="contact-pill" href="tel:0909163189">
+          <a class="contact-pill" href="tel:0909163189" onclick="return gtag_report_conversion('tel:0909163189');">
             <span class="icon">☎</span>
             <span><small>Volajte</small> 0909 163 189</span>
           </a>
@@ -1039,7 +1055,7 @@
         <div class="contact-lines">
           <div class="contact-line">
             <span class="icon">☎</span>
-            <div><strong>Telefón</strong><a href="tel:0909163189">0909 163 189</a></div>
+            <div><strong>Telefón</strong><a href="tel:0909163189" onclick="return gtag_report_conversion('tel:0909163189');">0909 163 189</a></div>
           </div>
           <div class="contact-line">
             <span class="icon">✉</span>
@@ -1067,7 +1083,7 @@
   </footer>
 
   <div class="mobile-cta">
-    <a class="btn btn-primary" href="tel:0909163189">Zavolať</a>
+    <a class="btn btn-primary" href="tel:0909163189" onclick="return gtag_report_conversion('tel:0909163189');">Zavolať</a>
     <a class="btn btn-primary" href="mailto:studnedetva@gmail.com">Email</a>
   </div>
 <h2>Vŕtanie studní v regióne</h2>
