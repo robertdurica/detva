@@ -3,78 +3,1141 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Vŕtanie studní Zvolen | Studne na kľúč od 65 €/m</title>
-  <meta name="description" content="Vŕtanie studní v Zvolene a okolí od 65 €/m. Kompletné riešenie na kľúč, čistenie studní, čerpadlá a rýchla realizácia." />
-  <meta property="og:title" content="Vŕtanie studní Zvolen" />
-  <meta property="og:description" content="Studne na kľúč v Zvolene od 65 €/m." />
-  <meta property="og:image" content="https://vrtaniestudnidetva.sk/panacik-doprava.png" />
-  <meta property="og:url" content="https://vrtaniestudnidetva.sk/vrtanie-studni-zvolen.html" />
-  <meta property="og:type" content="website" />
+  <meta name="theme-color" content="#07111f" />
+
+  <meta property="og:title" content="Vŕtanie studní Zvolen | Studne na kľúč od 60 €/m">
+  <meta property="og:description" content="Vŕtanie studní Zvolen a okolie od 60 €/m. Kompletné studne na kľúč, čistenie vrtov a montáž čerpadiel.">
+  <meta property="og:image" content="https://vrtaniestudnidetva.sk/panacik-doprava.png">
+  <meta property="og:image:width" content="1200">
+  <meta property="og:image:height" content="630">
+  <meta property="og:url" content="https://vrtaniestudnidetva.sk/vrtanie-studni-zvolen.html">
+  <meta property="og:type" content="website">
+
+  <meta name="twitter:card" content="summary_large_image">
+
+  <title>Vŕtanie studní Zvolen | Studne na kľúč od 60 €/m</title>
+  <meta name="description" content="Vŕtanie studní Zvolen a okolie od 60 €/m. Kompletné studne na kľúč, čistenie vrtov a montáž čerpadiel." />
+  <meta name="robots" content="index,follow" />
+
+  <link rel="icon" href="panacik-doprava.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
+
   <style>
-    body{margin:0;font-family:Arial,sans-serif;background:#06111f;color:#fff;line-height:1.75}
-    .wrap{max-width:1000px;margin:auto;padding:22px}
-    h1,h2{color:#37a7ff;line-height:1.2}
-    a{color:#4de1a1}
-    .btn{display:inline-block;margin-top:18px;padding:14px 20px;background:#0f82ff;color:#fff;text-decoration:none;border-radius:10px;font-weight:700}
-    .note{background:#0c1c31;padding:18px;border-radius:14px;border:1px solid rgba(255,255,255,.08)}
+    :root {
+      --bg: #06111f;
+      --bg2: #0c1c31;
+      --panel: rgba(10, 22, 40, 0.74);
+      --panel-strong: #0d2340;
+      --text: #f4f7fb;
+      --muted: #b9c8da;
+      --line: rgba(255,255,255,.09);
+      --brand: #37a7ff;
+      --brand2: #0f82ff;
+      --gold: #f2be48;
+      --ok: #4de1a1;
+      --shadow: 0 18px 60px rgba(0,0,0,.35);
+      --radius: 24px;
+      --radius-sm: 16px;
+      --max: 1180px;
+    }
+    * { box-sizing: border-box; }
+    html { scroll-behavior: smooth; }
+    body {
+      margin: 0;
+      font-family: Inter, system-ui, -apple-system, Segoe UI, Roboto, Arial, sans-serif;
+      color: var(--text);
+      background:
+        radial-gradient(circle at top left, rgba(55,167,255,.18), transparent 28%),
+        radial-gradient(circle at bottom right, rgba(242,190,72,.12), transparent 24%),
+        linear-gradient(180deg, #04101d 0%, #081627 45%, #06111f 100%);
+      overflow-x: hidden;
+    }
+    a { color: inherit; }
+    img { display: block; max-width: 100%; }
+    .wrap { width: min(var(--max), calc(100% - 32px)); margin: 0 auto; }
+    .topbar {
+      position: sticky;
+      top: 0;
+      z-index: 50;
+      backdrop-filter: blur(18px);
+      background: rgba(4, 12, 22, .7);
+      border-bottom: 1px solid var(--line);
+    }
+    .topbar-inner {
+      min-height: 74px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 16px;
+      padding: 8px 0;
+    }
+    .brand {
+      display: flex;
+      align-items: center;
+      gap: 14px;
+      text-decoration: none;
+      min-width: 0;
+    }
+    .brand-mark {
+      width: 44px;
+      height: 44px;
+      border-radius: 14px;
+      background: linear-gradient(145deg, var(--brand), #8ad0ff);
+      box-shadow: 0 12px 28px rgba(55,167,255,.35);
+      display: grid;
+      place-items: center;
+      flex: 0 0 auto;
+      overflow: hidden;
+    }
+    .brand-mark img {
+      width: 100%;
+      height: 100%;
+      object-fit: contain;
+      padding: 4px;
+    }
+    .brand-text { min-width: 0; }
+    .brand-text strong {
+      display: block;
+      font-size: 0.98rem;
+      line-height: 1.1;
+      letter-spacing: .02em;
+    }
+    .brand-text span {
+      display: block;
+      font-size: .86rem;
+      color: var(--muted);
+      margin-top: 3px;
+    }
+    .nav {
+      display: flex;
+      align-items: center;
+      gap: 18px;
+      font-size: .95rem;
+      color: var(--muted);
+      flex-wrap: wrap;
+      justify-content: center;
+    }
+    .nav a { text-decoration: none; }
+    .nav a:hover { color: white; }
+    .cta-small {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      gap: 10px;
+      padding: 12px 16px;
+      border-radius: 999px;
+      text-decoration: none;
+      color: white;
+      background: linear-gradient(135deg, var(--brand2), var(--brand));
+      box-shadow: 0 14px 30px rgba(15,130,255,.28);
+      font-weight: 800;
+      white-space: nowrap;
+    }
+    .hero {
+      position: relative;
+      padding: 46px 0 26px;
+    }
+    .hero-grid {
+      display: grid;
+      grid-template-columns: 1.05fr .95fr;
+      gap: 24px;
+      align-items: stretch;
+    }
+    .hero-copy, .hero-visual, .panel, .feature, .card, .quote, .review-card {
+      border: 1px solid var(--line);
+      box-shadow: var(--shadow);
+      background: var(--panel);
+      border-radius: var(--radius);
+    }
+    .hero-copy {
+      position: relative;
+      padding: 36px;
+      overflow: hidden;
+    }
+    .hero-copy::before {
+      content: "";
+      position: absolute;
+      inset: -40% -30% auto auto;
+      width: 340px;
+      height: 340px;
+      border-radius: 50%;
+      background: radial-gradient(circle, rgba(55,167,255,.22), transparent 62%);
+      pointer-events: none;
+    }
+    .eyebrow {
+      display: inline-flex;
+      align-items: center;
+      gap: 10px;
+      padding: 9px 14px;
+      border-radius: 999px;
+      background: rgba(55,167,255,.12);
+      color: #bfe5ff;
+      border: 1px solid rgba(55,167,255,.18);
+      font-size: .88rem;
+      font-weight: 700;
+      letter-spacing: .02em;
+    }
+    .eyebrow .dot {
+      width: 8px;
+      height: 8px;
+      border-radius: 50%;
+      background: var(--ok);
+      box-shadow: 0 0 0 6px rgba(77,225,161,.12);
+    }
+    h1 {
+      margin: 18px 0 16px;
+      font-size: clamp(2.3rem, 4.6vw, 4.5rem);
+      line-height: .96;
+      letter-spacing: -.04em;
+    }
+    .lead {
+      margin: 0;
+      font-size: clamp(1.03rem, 1.5vw, 1.15rem);
+      line-height: 1.72;
+      color: var(--muted);
+      max-width: 60ch;
+      overflow-wrap: anywhere;
+    }
+    .hero-badges {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 10px;
+      margin: 22px 0 0;
+    }
+    .badge {
+      padding: 10px 14px;
+      border-radius: 999px;
+      background: rgba(255,255,255,.05);
+      border: 1px solid var(--line);
+      color: #edf4ff;
+      font-weight: 700;
+      font-size: .92rem;
+    }
+    .badge strong { color: var(--gold); }
+    .hero-actions {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 12px;
+      margin-top: 28px;
+    }
+    .btn {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      padding: 14px 18px;
+      border-radius: 16px;
+      text-decoration: none;
+      font-weight: 900;
+      letter-spacing: .01em;
+      transition: transform .18s ease, box-shadow .18s ease, background .18s ease;
+    }
+    .btn:hover { transform: translateY(-1px); }
+    .btn-primary {
+      color: #fff;
+      background: linear-gradient(135deg, var(--brand2), #47b7ff);
+      box-shadow: 0 18px 32px rgba(15,130,255,.28);
+    }
+    .btn-ghost {
+      color: #e7f3ff;
+      background: rgba(255,255,255,.05);
+      border: 1px solid rgba(255,255,255,.12);
+    }
+    .hero-mini {
+      margin-top: 26px;
+      display: grid;
+      grid-template-columns: repeat(3, minmax(0, 1fr));
+      gap: 12px;
+    }
+    .mini {
+      padding: 14px;
+      border-radius: 18px;
+      background: rgba(4, 13, 24, .35);
+      border: 1px solid rgba(255,255,255,.08);
+    }
+    .mini strong { display: block; font-size: 1.05rem; }
+    .mini span {
+      display: block;
+      margin-top: 6px;
+      color: var(--muted);
+      font-size: .88rem;
+      line-height: 1.45;
+    }
+    .hero-visual {
+      position: relative;
+      overflow: hidden;
+      min-height: 100%;
+      padding: 14px;
+      display: flex;
+      flex-direction: column;
+      gap: 14px;
+    }
+    .visual-main {
+      position: relative;
+      flex: 1 1 auto;
+      min-height: 420px;
+      border-radius: calc(var(--radius) - 8px);
+      overflow: hidden;
+      background:
+        linear-gradient(180deg, rgba(1, 12, 25, .20), rgba(1, 12, 25, .65)),
+        url('voda.webp') center/cover no-repeat;
+    }
+    .visual-main::after {
+      content: "";
+      position: absolute;
+      inset: 0;
+      background: radial-gradient(circle at 50% 12%, rgba(255,255,255,.20), transparent 24%),
+                  linear-gradient(0deg, rgba(4,12,22,.62), transparent 50%);
+      pointer-events: none;
+    }
+    .visual-badge {
+      position: absolute;
+      left: 18px;
+      bottom: 18px;
+      z-index: 1;
+      max-width: 240px;
+      padding: 14px 15px;
+      border-radius: 18px;
+      background: rgba(5, 16, 29, .72);
+      backdrop-filter: blur(10px);
+      border: 1px solid rgba(255,255,255,.12);
+    }
+    .visual-badge strong { display: block; font-size: 1rem; }
+    .visual-badge span {
+      display: block;
+      margin-top: 6px;
+      color: var(--muted);
+      font-size: .9rem;
+    }
+    .contact-strip {
+      display: grid;
+      grid-template-columns: repeat(3, minmax(0, 1fr));
+      gap: 10px;
+    }
+    .contact-pill {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      padding: 14px 16px;
+      border-radius: 18px;
+      background: rgba(255,255,255,.06);
+      border: 1px solid rgba(255,255,255,.08);
+      color: white;
+      text-decoration: none;
+      font-weight: 800;
+      min-width: 0;
+    }
+    .contact-pill span,
+    .contact a {
+      word-break: break-word;
+      overflow-wrap: break-word;
+    }
+    .contact a {
+      font-size: 14px;
+      color: white;
+      text-decoration: none;
+    }
+    .icon {
+      width: 34px;
+      height: 34px;
+      border-radius: 12px;
+      display: grid;
+      place-items: center;
+      background: rgba(55,167,255,.16);
+      border: 1px solid rgba(55,167,255,.24);
+      flex: 0 0 auto;
+    }
+    .contact-pill small {
+      display: block;
+      color: var(--muted);
+      font-weight: 600;
+      margin-top: 2px;
+    }
+    .section {
+      padding: 18px 0 0;
+      width: 100%;
+      display: block;
+      clear: both;
+    }
+    .section-head {
+      display: flex;
+      flex-direction: column;
+      align-items: flex-start;
+      gap: 10px;
+      margin-bottom: 18px;
+    }
+    .section-head > div {
+      max-width: 720px;
+    }
+    .section-head h2 {
+      margin: 0;
+      font-size: clamp(1.5rem, 2vw, 2.3rem);
+      letter-spacing: -.03em;
+    }
+    .section-head p {
+      margin: 0;
+      color: var(--muted);
+      max-width: 720px;
+      line-height: 1.65;
+      overflow-wrap: anywhere;
+    }
+    .stats {
+      display: grid;
+      grid-template-columns: repeat(4, minmax(0, 1fr));
+      gap: 14px;
+      width: 100%;
+    }
+    .stat {
+      padding: 18px;
+      border-radius: 20px;
+      background: rgba(255,255,255,.05);
+      border: 1px solid rgba(255,255,255,.08);
+    }
+    .stat strong {
+      display: block;
+      font-size: 1.5rem;
+      margin-bottom: 6px;
+    }
+    .stat span {
+      color: var(--muted);
+      line-height: 1.55;
+      font-size: .94rem;
+    }
+    .cards {
+      display: grid;
+      grid-template-columns: repeat(3, minmax(0, 1fr));
+      gap: 18px;
+    }
+    .card {
+      overflow: hidden;
+      background: linear-gradient(180deg, rgba(11, 25, 43, .96), rgba(8, 19, 34, .92));
+    }
+    .card .img {
+      aspect-ratio: 16/11;
+      overflow: hidden;
+      background: #0b1b2f;
+    }
+    .card .img img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      transition: transform .35s ease;
+    }
+    .card:hover .img img { transform: scale(1.03); }
+    .card .body { padding: 18px; }
+    .card h3 { margin: 0 0 8px; font-size: 1.08rem; }
+    .card p { margin: 0; color: var(--muted); line-height: 1.65; }
+    .split {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 18px;
+      align-items: stretch;
+    }
+    .panel {
+      padding: 24px;
+      background: rgba(10, 23, 40, .82);
+    }
+    .panel h3 { margin: 0 0 10px; font-size: 1.2rem; }
+    .list {
+      display: grid;
+      gap: 12px;
+      margin-top: 16px;
+    }
+    .li {
+      display: flex;
+      gap: 12px;
+      align-items: flex-start;
+      padding: 14px 0;
+      border-top: 1px solid rgba(255,255,255,.08);
+      color: var(--muted);
+      line-height: 1.6;
+    }
+    .li:first-child {
+      border-top: none;
+      padding-top: 0;
+    }
+    .check {
+      width: 24px;
+      height: 24px;
+      border-radius: 50%;
+      background: rgba(77,225,161,.14);
+      border: 1px solid rgba(77,225,161,.24);
+      display: grid;
+      place-items: center;
+      flex: 0 0 auto;
+      color: var(--ok);
+      font-size: .9rem;
+      margin-top: 1px;
+    }
+    .price-box {
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      min-height: 100%;
+      background: linear-gradient(180deg, rgba(15,130,255,.12), rgba(10,23,40,.88));
+      position: relative;
+      overflow: hidden;
+    }
+    .price-box::before {
+      content: "";
+      position: absolute;
+      width: 280px;
+      height: 280px;
+      border-radius: 50%;
+      background: radial-gradient(circle, rgba(55,167,255,.18), transparent 65%);
+      top: -90px;
+      right: -100px;
+      pointer-events: none;
+    }
+    .price {
+      font-size: clamp(2rem, 5vw, 3.8rem);
+      line-height: .95;
+      font-weight: 900;
+      letter-spacing: -.05em;
+      margin: 0;
+    }
+    .price small {
+      display: block;
+      font-size: .98rem;
+      font-weight: 700;
+      color: var(--muted);
+      margin-top: 10px;
+      line-height: 1.5;
+      letter-spacing: 0;
+    }
+    .price-list {
+      margin: 18px 0 0;
+      padding: 0;
+      list-style: none;
+      display: grid;
+      gap: 10px;
+    }
+    .price-list li {
+      display: flex;
+      gap: 10px;
+      align-items: flex-start;
+      color: #e9f2fb;
+      line-height: 1.55;
+    }
+    .price-list li::before {
+      content: "✓";
+      color: var(--gold);
+      font-weight: 900;
+    }
+    .gallery {
+      display: grid;
+      grid-template-columns: 1.3fr .7fr;
+      gap: 18px;
+    }
+    .gallery-main, .gallery-side {
+      border-radius: var(--radius);
+      overflow: hidden;
+      border: 1px solid var(--line);
+      box-shadow: var(--shadow);
+      background: rgba(10, 22, 40, .78);
+    }
+    .gallery-main {
+      position: relative;
+      min-height: 420px;
+    }
+    .gallery-main img, .gallery-side img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+    .gallery-side {
+      display: grid;
+      grid-template-rows: 1fr 1fr;
+      gap: 18px;
+      background: transparent;
+      border: none;
+      box-shadow: none;
+    }
+    .shot {
+      position: relative;
+      min-height: 201px;
+      border-radius: var(--radius);
+      overflow: hidden;
+      border: 1px solid var(--line);
+      box-shadow: var(--shadow);
+    }
+    .shot .label {
+      position: absolute;
+      left: 14px;
+      bottom: 14px;
+      padding: 8px 11px;
+      border-radius: 999px;
+      background: rgba(5, 15, 28, .72);
+      border: 1px solid rgba(255,255,255,.1);
+      font-size: .85rem;
+      font-weight: 800;
+    }
+    .quote {
+      padding: 24px;
+      background: linear-gradient(180deg, rgba(255,255,255,.05), rgba(255,255,255,.03));
+    }
+    .quote p {
+      margin: 0;
+      color: #eaf4ff;
+      line-height: 1.8;
+      font-size: 1.02rem;
+    }
+    .quote strong {
+      display: block;
+      margin-top: 14px;
+      color: var(--gold);
+    }
+    .reviews-grid {
+      display: grid;
+      grid-template-columns: repeat(3, minmax(0, 1fr));
+      gap: 18px;
+    }
+    .review-card {
+      padding: 18px;
+      border-radius: var(--radius);
+      background: rgba(10, 22, 40, 0.74);
+      border: 1px solid var(--line);
+      box-shadow: var(--shadow);
+    }
+    .review-card strong {
+      display:block;
+      margin-bottom:8px;
+      color:#fff;
+      font-size: 0.98rem;
+    }
+    .review-card p {
+      margin:0;
+      color: var(--muted);
+      line-height:1.7;
+      overflow-wrap:anywhere;
+    }
+    .faq {
+      display: grid;
+      gap: 12px;
+    }
+    details {
+      border: 1px solid rgba(255,255,255,.09);
+      background: rgba(255,255,255,.04);
+      border-radius: 18px;
+      padding: 0 16px;
+      overflow: hidden;
+    }
+    summary {
+      cursor: pointer;
+      list-style: none;
+      padding: 16px 0;
+      font-weight: 800;
+    }
+    summary::-webkit-details-marker { display: none; }
+    details p {
+      margin: 0 0 16px;
+      color: var(--muted);
+      line-height: 1.7;
+    }
+    .contact-box {
+      display: grid;
+      grid-template-columns: 1.05fr .95fr;
+      gap: 18px;
+      align-items: stretch;
+    }
+    .contact-card {
+      padding: 26px;
+      background: linear-gradient(180deg, rgba(15,130,255,.12), rgba(10,23,40,.88));
+      border-radius: var(--radius);
+      border: 1px solid rgba(255,255,255,.08);
+      box-shadow: var(--shadow);
+    }
+    .contact-card h3 { margin-top: 0; }
+    .contact-lines {
+      display: grid;
+      gap: 12px;
+      margin-top: 18px;
+    }
+    .contact-line {
+      display: flex;
+      gap: 12px;
+      align-items: flex-start;
+      padding: 14px 0;
+      border-top: 1px solid rgba(255,255,255,.08);
+      color: var(--muted);
+    }
+    .contact-line:first-child {
+      border-top: none;
+      padding-top: 0;
+    }
+    .contact-line strong {
+      display: block;
+      color: var(--text);
+      margin-bottom: 3px;
+    }
+    .mapbox {
+      border-radius: var(--radius);
+      overflow: hidden;
+      border: 1px solid var(--line);
+      box-shadow: var(--shadow);
+      background: rgba(255,255,255,.04);
+      min-height: 100%;
+      padding: 18px;
+      display: grid;
+      place-items: center;
+      text-align: center;
+    }
+    .mapbox iframe {
+      width: 100%;
+      min-height: 320px;
+      height: 100%;
+      border: 0;
+      border-radius: 18px;
+      display: block;
+    }
+    footer {
+      padding: 42px 0 96px;
+      color: var(--muted);
+    }
+    .foot {
+      border-top: 1px solid var(--line);
+      padding-top: 24px;
+      display: flex;
+      justify-content: space-between;
+      gap: 16px;
+      flex-wrap: wrap;
+      align-items: center;
+    }
+    .foot strong { color: var(--text); }
+    .mobile-cta {
+      position: fixed;
+      left: 50%;
+      bottom: 14px;
+      transform: translateX(-50%);
+      z-index: 60;
+      display: none;
+      width: calc(100% - 28px);
+      max-width: 560px;
+      gap: 10px;
+    }
+    .mobile-cta a {
+      flex: 1 1 auto;
+      justify-content: center;
+      text-align: center;
+      box-shadow: 0 14px 32px rgba(0,0,0,.3);
+    }
+    .floaty {
+      animation: floaty 6s ease-in-out infinite;
+    }
+    @keyframes floaty {
+      0%,100% { transform: translateY(0); }
+      50% { transform: translateY(-6px); }
+    }
+    .glow {
+      position: relative;
+    }
+    .glow::after {
+      content: "";
+      position: absolute;
+      inset: -1px;
+      border-radius: inherit;
+      box-shadow: 0 0 0 1px rgba(55,167,255,.12), 0 0 32px rgba(55,167,255,.12);
+      pointer-events: none;
+    }
+    @media (max-width: 1040px) {
+      .hero-grid, .split, .gallery, .contact-box { grid-template-columns: 1fr; }
+      .cards { grid-template-columns: 1fr 1fr; }
+      .stats { grid-template-columns: 1fr 1fr; }
+      .contact-strip { grid-template-columns: 1fr; }
+      .hero-mini { grid-template-columns: 1fr; }
+      .nav {
+        display: flex;
+        gap: 10px;
+        overflow-x: auto;
+        -webkit-overflow-scrolling: touch;
+        scrollbar-width: none;
+        flex-wrap: nowrap;
+        justify-content: flex-start;
+        max-width: 100%;
+        padding-bottom: 2px;
+      }
+      .nav::-webkit-scrollbar { display: none; }
+      .cta-small {
+        display: inline-flex;
+        padding: 11px 14px;
+        font-size: .92rem;
+      }
+    }
+    @media (max-width: 720px) {
+      .hero { padding-top: 24px; }
+      .hero-copy, .panel, .contact-card { padding: 22px; }
+      .cards, .stats { grid-template-columns: 1fr; }
+      .topbar-inner {
+        min-height: 68px;
+        align-items: flex-start;
+        padding: 10px 0 8px;
+        flex-wrap: wrap;
+      }
+      .nav {
+        order: 3;
+        width: 100%;
+        padding-top: 6px;
+        font-size: .9rem;
+      }
+      .cta-small { order: 2; margin-left: auto; }
+      .mobile-cta { display: flex; }
+      h1 { margin-top: 16px; }
+      .section-head { flex-direction: column; align-items: flex-start; }
+      .brand-text strong { font-size: .95rem; }
+      .brand-text span { font-size: .8rem; }
+    }
+    .links-row {
+      display:flex;
+      flex-wrap:wrap;
+      gap: 0 8px;
+      line-height:1.9;
+    }
+    .links-row a {
+      color:#fff;
+      text-decoration:none;
+    }
+    .links-row a:hover { text-decoration: underline; }
+    @media (max-width: 1040px) { .reviews-grid { grid-template-columns: 1fr 1fr; } }
+    @media (max-width: 720px) { .reviews-grid { grid-template-columns: 1fr; } }
   </style>
+
+  <link rel="canonical" href="https://vrtaniestudnidetva.sk/vrtanie-studni-zvolen.html">
+  <script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    {
+      "@type": "Question",
+      "name": "Viete riešiť aj pozemky v okolí Zvolena?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Áno, pracujeme v Zvolene aj v okolí podľa konkrétnej lokality a prístupnosti pozemku."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Je možné dohodnúť aj kompletnú realizáciu?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Áno, kompletne zabezpečíme vrt, čistenie aj prípravu na ďalšie technologické kroky."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Pomôžete s návrhom vhodného postupu?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Áno, odporučíme vhodný postup podľa podložia, využitia vody a možností pozemku."
+      }
+    }
+  ]
+}
+  </script>
 </head>
 <body>
-  <main class="wrap">
-    <h1>Vŕtanie studní Zvolen</h1>
-    <p class="note"><strong>Zvolen</strong> je jedna z najdôležitejších lokalít, kde zákazníci často hľadajú spoľahlivý zdroj vody bez závislosti od verejnej siete. Vŕtanie studní v Zvolene robíme pre rodinné domy, chaty, firmy aj pozemky, kde je potrebné riešiť vodu na dlhé roky dopredu.</p>
+  <header class="topbar">
+    <div class="wrap topbar-inner">
+      <a class="brand" href="#top" aria-label="Vŕtanie studní Zvolen | Studne na kľúč od 60 €/m">
+        <div class="brand-mark">
+          <img src="panacik-doprava.png" alt="Logo Vŕtanie studní Zvolen | Studne na kľúč od 60 €/m">
+        </div>
+        <div class="brand-text">
+          <strong>Vŕtanie studní Zvolen | Studne na kľúč od 60 €/m</strong>
+          <span>Studne na kľúč • od 60 €/m</span>
+        </div>
+      </a>
 
-    <h2>Profesionálne vŕtanie studní v Zvolene a okolí</h2>
-    <p>V Zvolene zabezpečujeme kompletné vŕtanie studní na kľúč. Každý pozemok je iný, preto vždy posudzujeme prístup na miesto, typ podložia, možné hĺbky vrtu a technické možnosti realizácie. Cieľom nie je len samotný vrt, ale funkčná a dlhodobo spoľahlivá studňa, ktorá bude poskytovať stabilný prísun vody.</p>
-    <p>Pracujeme tak, aby výsledok dával zmysel nielen technicky, ale aj ekonomicky. Ak hľadáte vŕtanie studní Zvolen, pripravíme riešenie podľa konkrétneho pozemku a vysvetlíme vám, čo je pre vašu lokalitu najlepšie. Máme skúsenosti s rôznymi terénmi v rámci regiónu a vieme sa prispôsobiť podmienkam na mieste.</p>
+      <nav class="nav" aria-label="Hlavná navigácia">
+        <a href="#sluzby">Služby</a>
+        <a href="#cena">Cena</a>
+        <a href="#fotky">Fotky</a>
+        <a href="#referencie">Referencie</a>
+        <a href="#faq">FAQ</a>
+        <a href="#kontakt">Kontakt</a>
+      </nav>
 
-    <h2>Cena vŕtania studne Zvolen</h2>
-    <p>Cena vŕtania studní v Zvolene začína od <strong>65 €/m</strong>. Finálna cena závisí od hĺbky vrtu, prístupnosti pozemku, typu podložia a rozsahu prác. V cene môže byť zahrnuté aj čistenie studne, osadenie technických prvkov a kompletná realizácia na kľúč vrátane čerpadla a zapojenia vody do domu.</p>
-    <p>Ak chcete vedieť orientačnú cenu, pošlite nám lokalitu a základné informácie o pozemku. Na základe toho navrhneme postup a pripravíme férovú cenovú ponuku pre Zvolen a okolie.</p>
+      <a class="cta-small" href="#kontakt">Nezáväzná ponuka</a>
+    </div>
+  </header>
 
-    <h2>Prečo si vybrať naše vŕtanie studní v Zvolene</h2>
-    <p>Naša výhoda je kombinácia praxe, lokálneho regiónu a vlastnej techniky. Vďaka tomu vieme pracovať rýchlo, bez zbytočných komplikácií a bez dodatočných nákladov, ktoré zákazníci často pri iných firmách nečakajú. Vŕtanie studní v Zvolene realizujeme zodpovedne, s dôrazom na kvalitu a dlhú životnosť studne.</p>
-    <p>Chceme, aby bol výsledok praktický, čistý a funkčný. Preto sa zameriavame na riešenia, ktoré reálne fungujú na danom pozemku, nie na lacné kompromisy.</p>
+  <main id="top" class="hero">
+    <div class="wrap hero-grid">
+      <section class="hero-copy glow">
+        <span class="eyebrow"><span class="dot"></span> Zvolen • riešenie pre domy aj chaty</span>
+        <h1>Vŕtanie studní Zvolen<br>kvalitne a na mieru</h1>
+        <p class="lead">Vo Zvolene zabezpečujeme kompletné vŕtanie studní na kľúč. Od návrhu až po vyčistenie vrtu všetko nastavíme tak, aby bol výsledok dlhodobo spoľahlivý.</p>
 
-    <h2>Vŕtanie studní Zvolen pre domy, chaty aj firmy</h2>
-    <p>Studňa je najmä pre rodinné domy a chaty vo Zvolene veľmi výhodná investícia. Ak potrebujete vlastný zdroj vody pre domácnosť alebo prevádzku, vrtaná studňa je dlhodobo rozumné riešenie. Pomáha znížiť závislosť od verejnej siete a v mnohých prípadoch aj znížiť náklady na vodu.</p>
-    <p>Vŕtame studne pre nové stavby, existujúce domy aj pozemky, ktoré sa chcú pripraviť na budúce využitie. Ak ešte len plánujete, poradíme vám, čo sa pre vašu lokalitu vo Zvolene oplatí najviac.</p>
+        <div class="hero-badges">
+          <div class="badge"><strong>60 € / m</strong> Zvolene a okolí</div>
+          <div class="badge">Studne na mieru podľa podmienok</div>
+          <div class="badge">Domy • chaty • pozemky</div>
+        </div>
 
-    <h2>Prelinkovanie na ďalšie lokality</h2>
-    <p>Hlavná oblasť je <a href="https://vrtaniestudnidetva.sk/">vŕtanie studní Detva</a>, no pôsobíme aj v <a href="/vrtanie-studni-hrinova.html">Hriňovej</a>, <a href="/vrtanie-studni-viglas.html">Vígľaši</a>, <a href="/vrtanie-studni-zarnovica.html">Žarnovici</a>, <a href="/vrtanie-studni-brezno.html">Brezne</a>, <a href="/vrtanie-studni-rimavska-sobota.html">Rimavskej Sobote</a>, <a href="/vrtanie-studni-velky-krtis.html">Veľkom Krtíši</a>, <a href="/vrtanie-studni-krupina.html">Krupine</a> a <a href="/vrtanie-studni-ziar-nad-hronom.html">Žiari nad Hronom</a>.</p>
+        <div class="hero-actions">
+          <a class="btn btn-primary" href="tel:0909163189">Zavolať: 0909 163 189</a>
+          <a class="btn btn-ghost" href="#kontakt">Získať cenovú ponuku</a>
+        </div>
 
-    <h2>Kontakt – vŕtanie studní Zvolen</h2>
-    <p>Ak chcete nezáväznú cenovú ponuku pre Zvolen a okolie, zavolajte alebo napíšte. Ozveme sa čo najskôr.</p>
-    <p>📞 <a href="tel:0909163189">0909 163 189</a><br>📧 <a href="mailto:studnedetva@gmail.com">studnedetva@gmail.com</a></p>
-    <a class="btn" href="tel:0909163189">Zavolať teraz</a>
-    <h2>Vŕtanie studní v regióne</h2>
+        <div class="hero-mini">
+          <div class="mini">
+            <strong>Ceny</strong>
+            <span>Jednotná cena za meter bez ohľadu na podmienky terénu.</span>
+          </div>
+          <div class="mini">
+            <strong>Rýchla ponuka</strong>
+            <span>Termín vieme dohodnúť podľa dostupnosti pozemku.</span>
+          </div>
+          <div class="mini">
+            <strong>Technika</strong>
+            <span>Vhodné vybavenie aj pre menej dostupné pozemky.</span>
+          </div>
+        </div>
+      </section>
 
-<p>
-Pôsobíme v celom regióne stredného Slovenska:
-
-<a href="/index.html">Detva</a>,
-<a href="/vrtanie-studni-banska-bystrica.html">Banská Bystrica</a>,
-<a href="/vrtanie-studni-zvolen.html">Zvolen</a>,
-<a href="/vrtanie-studni-lucenec.html">Lučenec</a>,
-<a href="/vrtanie-studni-rimavska-sobota.html">Rimavská Sobota</a>,
-<a href="/vrtanie-studni-velky-krtis.html">Veľký Krtíš</a>,
-<a href="/vrtanie-studni-ziar-nad-hronom.html">Žiar nad Hronom</a>,
-<a href="/vrtanie-studni-hrinova.html">Hriňová</a>,
-<a href="/vrtanie-studni-latky.html">Látky</a>,
-<a href="/vrtanie-studni-krupina.html">Krupina</a>,
-<a href="/vrtanie-studni-zarnovica.html">Žarnovica</a>,
-<a href="/vrtanie-studni-brezno.html">Brezno</a>.
-</p>
+      <aside class="hero-visual">
+        <div class="visual-main floaty">
+          <div class="visual-badge">
+            <strong>Studne na kľúč</strong>
+            <span>Všetko vybavíme od vrtu až po čistenie a techniku.</span>
+          </div>
+        </div>
+        <div class="contact-strip">
+          <a class="contact-pill" href="tel:0909163189">
+            <span class="icon">☎</span>
+            <span><small>Volajte</small> 0909 163 189</span>
+          </a>
+          <a class="contact-pill" href="mailto:studnedetva@gmail.com">
+            <span class="icon">✉</span>
+            <span><small>Email</small> studnedetva@gmail.com</span>
+          </a>
+          <a class="contact-pill" href="#kontakt">
+            <span class="icon">⌂</span>
+            <span><small>Oblasť</small> Zvolen</span>
+          </a>
+        </div>
+      </aside>
+    </div>
   </main>
-  <div style="opacity:0.05; font-size:12px; line-height:1.4;">
-  vŕtanie studní Detva, vŕtanie studní Banská Bystrica, vŕtanie studní Zvolen,
-  vŕtanie studní Lučenec, vŕtanie studní Rimavská Sobota,
-  vŕtanie studní Veľký Krtíš, vŕtanie studní Žiar nad Hronom,
-  vŕtanie studní Hriňová, vŕtanie studní Látky,
-  vŕtanie studní Krupina, vŕtanie studní Žarnovica,
-  vŕtanie studní Brezno, studne na kľúč, vrt studne cena,
-  vŕtaná studňa cena za meter, studňa na pozemok,
-  voda na pozemku riešenie, vrtanie studne Slovensko
-</div>
+
+  <section class="section wrap" style="margin-top:40px;">
+    <div class="panel" style="padding:24px;">
+      <div class="section-head">
+        <div>
+          <h2>Vŕtanie studní Zvolen – riešenie pre každý pozemok</h2>
+          <p>Vo Zvolene realizujeme vŕtané studne pre rodinné domy, chaty aj pozemky s rôznou dostupnosťou. Každý vrt navrhujeme tak, aby bol výdatný, stabilný a pripravený na dlhé používanie.</p>
+          <p>Zvolen a jeho okolie si vyžaduje individuálny prístup podľa podložia, prístupu techniky a budúceho spôsobu využívania vody. Preto každý projekt riešime presne a bez zbytočných kompromisov.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <div style="height:30px;"></div>
+
+  <section class="section wrap">
+    <div class="stats">
+      <div class="stat"><strong>✔ cena</strong><span>fixná cena 60€ za meter</span></div>
+      <div class="stat"><strong>✔ rýchlosť</strong><span>obhliadka a termín podľa dohody</span></div>
+      <div class="stat"><strong>✔ kvalita</strong><span>kvalitné materiály a čisté prevedenie</span></div>
+      <div class="stat"><strong>✔ férové jednanie</strong><span>dohodnuté podmienky platia</span></div>
+    </div>
+  </section>
+
+  <section id="sluzby" class="section wrap">
+    <div class="section-head">
+      <div>
+        <h2>Prečo my</h2>
+        <p>Máme skúsenosti s realizáciami v Zvolen a okolí, kde sa často stretávame s rôznorodým podložím. Vďaka tomu vieme zvoliť vhodný postup, ktorý zabezpečí kvalitný výsledok bez zbytočných komplikácií.</p>
+      </div>
+    </div>
+
+    <div class="cards">
+      <article class="card">
+        <div class="img">
+          <img src="construction-equipment-drilling-rig-Sanrock-FY300-300M-Water-well-drill-rig---1623394064923641421_big--21061109250528892000.jpg" alt="Vŕtacia súprava pre studne v Zvolen">
+        </div>
+        <div class="body">
+          <h3>Vŕtanie studní</h3>
+          <p>Moderná vŕtacia súprava pre presné a rýchle realizácie.</p>
+        </div>
+      </article>
+
+      <article class="card">
+        <div class="img">
+          <img src="IMG_3984.jpeg" alt="Vŕtanie a osadenie studne v Zvolen">
+        </div>
+        <div class="body">
+          <h3>Kompletná realizácia</h3>
+          <p>Postaráme sa o celý proces od vrtu až po funkčnú studňu.</p>
+        </div>
+      </article>
+
+      <article class="card">
+        <div class="img">
+          <img src="calpeda.jpg" alt="Studničná technika pre Zvolen">
+        </div>
+        <div class="body">
+          <h3>Čistenie a technika</h3>
+          <p>Čistenie, čerpadlá a doplnková technika pre spoľahlivý chod.</p>
+        </div>
+      </article>
+    </div>
+  </section>
+
+  <section class="section wrap split">
+    <div class="panel">
+      <h3>Špecifiká vŕtania v Zvolen</h3>
+      <div class="list">
+        <div class="li"><span class="check">✓</span><span>Každý pozemok posudzujeme samostatne podľa prístupu, terénu a očakávanej výdatnosti vody.</span></div>
+        <div class="li"><span class="check">✓</span><span>Podložie sa môže meniť už v malej hĺbke, preto volíme vhodnú technológiu vŕtania.</span></div>
+        <div class="li"><span class="check">✓</span><span>Riešime studne pre bývanie, rekreáciu aj dlhodobé využitie na pozemku.</span></div>
+        <div class="li"><span class="check">✓</span><span>Na konci práce odovzdáme vrt pripravený na ďalšiu technológiu a prevádzku.</span></div>
+      </div>
+    </div>
+
+    <div id="cena" class="panel price-box">
+      <div>
+        <h3>Cena vŕtania studne</h3>
+        <p class="price">len 60 €<small>za meter bez skrytých poplatkov</small></p>
+        <ul class="price-list">
+          <li>cena je konečná</li>
+          <li>vyčistenie vrtu AIRLIFT metódou</li>
+          <li>možnosť kompletnej realizácie na kľúč</li>
+        </ul>
+      </div>
+      <div class="hero-actions" style="margin-top:22px;">
+        <a class="btn btn-primary" href="mailto:studnedetva@gmail.com?subject=Cenová%20ponuka%20-%20Zvolen">Napísať email</a>
+        <a class="btn btn-ghost" href="#kontakt">Získať cenovú ponuku</a>
+      </div>
+    </div>
+  </section>
+
+  <section id="fotky" class="section wrap">
+    <div class="section-head">
+      <div>
+        <h2>Fotky a realizácie v Zvolen</h2>
+        <p>Ukážky realizácií, techniky a výsledných vrtov z lokality Zvolen a jej okolia.</p>
+      </div>
+    </div>
+
+    <div class="gallery">
+      <div class="gallery-main">
+        <img src="IMG_3984.jpeg" alt="Realizácia vrtanej studne Zvolen">
+      </div>
+      <div class="gallery-side">
+        <div class="shot">
+          <img src="construction-equipment-drilling-rig-Sanrock-FY300-300M-Water-well-drill-rig---1623394064923641421_big--21061109250528892000.jpg" alt="Vŕtacia technika pre studne v Zvolen">
+          <div class="label">Vŕtacia súprava Zvolen</div>
+        </div>
+        <div class="shot">
+          <img src="vizitka_print_300dpi.png" alt="Vŕtanie studní Zvolen">
+          <div class="label">Zvolen</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section wrap">
+    <div class="quote">
+      <p>„Vo Zvolene sa oplatí ísť cestou presnej prípravy a kvalitného prevedenia. Dobre spravená studňa je investícia na roky.“</p>
+      <strong>Kompletné riešenie studní na kľúč</strong>
+    </div>
+  </section>
+
+  <section id="referencie" class="section wrap">
+    <div class="section-head">
+      <div>
+        <h2>Referencie</h2>
+        <p>Anonýmne referencie od zákazníkov z tejto lokality.</p>
+      </div>
+    </div>
+
+    <div class="reviews-grid">
+      <div class="review-card"><strong>Anonymný zákazník</strong><p>Komunikácia bola rýchla a vecná, výsledok presne zodpovedal tomu, čo sme si dohodli pre Zvolen.</p></div>
+      <div class="review-card"><strong>Anonymný zákazník</strong><p>Technika prišla v dohodnutom termíne a celý priebeh bol bez zbytočných komplikácií.</p></div>
+      <div class="review-card"><strong>Anonymný zákazník</strong><p>Všetko prebehlo profesionálne, po práci ostalo upratané a studňa funguje spoľahlivo.</p></div>
+      <div class="review-card"><strong>Anonymný zákazník</strong><p>Ocenil som presný návrh a férové vysvetlenie, čo je pre náš pozemok reálne a rozumné.</p></div>
+      <div class="review-card"><strong>Anonymný zákazník</strong><p>Aj v horšom teréne sa našlo riešenie, ktoré bolo technicky čisté a použiteľné do budúcnosti.</p></div>
+      <div class="review-card"><strong>Anonymný zákazník</strong><p>Od prvého kontaktu až po dokončenie som mal istotu, že je to v rukách ľudí, čo vedia čo robia.</p></div>
+    </div>
+  </section>
+
+  <section id="faq" class="section wrap">
+    <div class="section-head">
+      <div>
+        <h2>Časté otázky</h2>
+      </div>
+    </div>
+
+    <div class="reviews-grid">
+      <div class="review-card"><strong>Viete riešiť aj pozemky v okolí Zvolena?</strong><p>Áno, pracujeme v Zvolene aj v okolí podľa konkrétnej lokality a prístupnosti pozemku.</p></div>
+      <div class="review-card"><strong>Je možné dohodnúť aj kompletnú realizáciu?</strong><p>Áno, kompletne zabezpečíme vrt, čistenie aj prípravu na ďalšie technologické kroky.</p></div>
+      <div class="review-card"><strong>Pomôžete s návrhom vhodného postupu?</strong><p>Áno, odporučíme vhodný postup podľa podložia, využitia vody a možností pozemku.</p></div>
+    </div>
+  </section>
+
+  <section id="kontakt" class="section wrap">
+    <div class="section-head">
+      <div>
+        <h2>Kontakt</h2>
+        <p>Kontaktujte nás pre nezáväznú cenovú ponuku. Radi vám poradíme s riešením studne presne pre váš pozemok v Zvolen alebo okolí.</p>
+      </div>
+    </div>
+
+    <div class="contact-box">
+      <div class="contact-card">
+        <h3>Napíšte alebo zavolajte</h3>
+        <p style="color:var(--muted);line-height:1.7;margin-top:0;">Dohodnite si už dnes obhliadku vašej budúcej studne.</p>
+        <div class="contact-lines">
+          <div class="contact-line">
+            <span class="icon">☎</span>
+            <div><strong>Telefón</strong><a href="tel:0909163189">0909 163 189</a></div>
+          </div>
+          <div class="contact-line">
+            <span class="icon">✉</span>
+            <div><strong>Email</strong><a href="mailto:studnedetva@gmail.com">studnedetva@gmail.com</a></div>
+          </div>
+          <div class="contact-line">
+            <span class="icon">⌂</span>
+            <div><strong>Oblasť</strong>Zvolen a okolie</div>
+          </div>
+        </div>
+      </div>
+
+      <div class="mapbox">
+        <iframe
+          src="https://www.google.com/maps?q=Zvolen, Slovakia&output=embed"
+          loading="lazy"
+          referrerpolicy="no-referrer-when-downgrade"
+          title="Mapa Zvolen">
+        </iframe>
+      </div>
+    </div>
+  </section>
+
+  <footer>
+    <div class="wrap foot">
+      <div><strong>Vŕtanie studní Zvolen | Studne na kľúč od 60 €/m</strong><br><span>Studne na kľúč • 60 €/m</span></div>
+      <div>© 2026 • Zvolen a okolie</div>
+    </div>
+  </footer>
+
+  <div class="mobile-cta">
+    <a class="btn btn-primary" href="tel:0909163189">Zavolať</a>
+    <a class="btn btn-primary" href="mailto:studnedetva@gmail.com">Email</a>
+  </div>
+
+  <section class="section wrap">
+    <h2>Vŕtanie studní v regióne</h2>
+    <p class="links-row">
+      
+      <a href="/vrtanie-studni-rimavska-sobota.html">Rimavská Sobota</a>,
+      <a href="/vrtanie-studni-velky-krtis.html">Veľký Krtíš</a>,
+      <a href="/vrtanie-studni-zarnovica.html">Žarnovica</a>
+    
+    </p>
+  </section>
+
 </body>
 </html>
