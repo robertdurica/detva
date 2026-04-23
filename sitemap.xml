@@ -1,73 +1,60 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
 
-  <!-- Hlavná stránka -->
   <url>
-    <loc>https://www.vrtaniestudnidetva.sk/</loc>
-    <lastmod>2026-04-15</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>1.0</priority>
-  </url>
-
-  <!-- Lokálne landing pages -->
-  <url>
-    <loc>https://www.vrtaniestudnidetva.sk/vrtanie-studni-banska-bystrica.html</loc>
-    <priority>0.9</priority>
+    <loc>https://vrtaniestudnidetva.sk/</loc>
   </url>
 
   <url>
-    <loc>https://www.vrtaniestudnidetva.sk/vrtanie-studni-brezno.html</loc>
-    <priority>0.9</priority>
+    <loc>https://vrtaniestudnidetva.sk/vrtanie-studni-detva.html</loc>
   </url>
 
   <url>
-    <loc>https://www.vrtaniestudnidetva.sk/vrtanie-studni-hrinova.html</loc>
-    <priority>0.9</priority>
+    <loc>https://vrtaniestudnidetva.sk/vrtanie-studni-zvolen.html</loc>
   </url>
 
   <url>
-    <loc>https://www.vrtaniestudnidetva.sk/vrtanie-studni-krupina.html</loc>
-    <priority>0.9</priority>
+    <loc>https://vrtaniestudnidetva.sk/vrtanie-studni-ziar-nad-hronom.html</loc>
   </url>
 
   <url>
-    <loc>https://www.vrtaniestudnidetva.sk/vrtanie-studni-latky.html</loc>
-    <priority>0.9</priority>
+    <loc>https://vrtaniestudnidetva.sk/vrtanie-studni-zarnovica.html</loc>
   </url>
 
   <url>
-    <loc>https://www.vrtaniestudnidetva.sk/vrtanie-studni-lucenec.html</loc>
-    <priority>0.9</priority>
+    <loc>https://vrtaniestudnidetva.sk/vrtanie-studni-velky-krtis.html</loc>
   </url>
 
   <url>
-    <loc>https://www.vrtaniestudnidetva.sk/vrtanie-studni-rimavska-sobota.html</loc>
-    <priority>0.9</priority>
+    <loc>https://vrtaniestudnidetva.sk/vrtanie-studni-rimavska-sobota.html</loc>
   </url>
 
   <url>
-    <loc>https://www.vrtaniestudnidetva.sk/vrtanie-studni-velky-krtis.html</loc>
-    <priority>0.9</priority>
+    <loc>https://vrtaniestudnidetva.sk/vrtanie-studni-podkrivan.html</loc>
   </url>
 
   <url>
-    <loc>https://www.vrtaniestudnidetva.sk/vrtanie-studni-zarnovica.html</loc>
-    <priority>0.9</priority>
+    <loc>https://vrtaniestudnidetva.sk/vrtanie-studni-slatinske-lazy.html</loc>
   </url>
 
   <url>
-    <loc>https://www.vrtaniestudnidetva.sk/vrtanie-studni-ziar-nad-hronom.html</loc>
-    <priority>0.9</priority>
+    <loc>https://vrtaniestudnidetva.sk/vrtanie-studni-stara-huta.html</loc>
   </url>
 
   <url>
-    <loc>https://www.vrtaniestudnidetva.sk/vrtanie-studni-zvolen.html</loc>
-    <priority>0.9</priority>
+    <loc>https://vrtaniestudnidetva.sk/vrtanie-studni-viglas.html</loc>
   </url>
 
-   <url>
-    <loc>https://www.vrtaniestudnidetva.sk/vrtanie-studni-detva.html</loc>
-    <priority>0.9</priority>
+  <url>
+    <loc>https://vrtaniestudnidetva.sk/vrtanie-studni-piest.html</loc>
+  </url>
+
+  <url>
+    <loc>https://vrtaniestudnidetva.sk/vrtanie-studni-krivec.html</loc>
+  </url>
+
+  <url>
+    <loc>https://vrtaniestudnidetva.sk/vrtanie-studni-blato.html</loc>
   </url>
 
 </urlset>
